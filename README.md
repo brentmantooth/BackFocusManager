@@ -1,5 +1,5 @@
 # BackFocusManager
-# Configuration and Backfocus Management
+# Telescope Configuration and Backfocus Management
 One of the things that I enjoy about astrophotography is tinkering with my setup. As I progressed, I got more telescopes, and more accessories, I got more serious about fine tuning each configuration to produce great images. I have a Schmidt Cassegrain telescope where I switch between deep sky and planetary configurations. I realized there is a lot of detail I to capture such as what parts work in what order. I’m sharing the tools I developed to make it easier to document and switch between configurations quickly and reproducibly. I also realized this is very helpful when considering new equipment and exactly how you will integrate it into your image train.
 
 What does it do? Document image train configurations, plan image train configurations
