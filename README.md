@@ -1,6 +1,20 @@
 # BackFocusManager
-An excel sheet setup to help manage telescope back focus for multiple telescopes or telescope configurations
+# Configuration and Backfocus Management
+One of the things that I enjoy about astrophotography is tinkering with my setup. As I progressed, I got more telescopes, and more accessories, I got more serious about fine tuning each configuration to produce great images. I have a Schmidt Cassegrain telescope where I switch between deep sky and planetary configurations. I realized there is a lot of detail I to capture such as what parts work in what order. I’m sharing the tools I developed to make it easier to document and switch between configurations quickly and reproducibly. I also realized this is very helpful when considering new equipment and exactly how you will integrate it into your image train.
 
-BackFocus Log Clean.xlsx - clean version for you to use and populate
+What does it do? Document image train configurations, plan image train configurations
+It does NOT tell you what YOUR backfocus distance should be.
 
-BackFocus Log Populated.xlsx - the version I show in the youtube video to explain how to use this Excel File.
+Here is what got me to develop this tool:
+Over the last few years I have tuned up a spreadsheet that I use to document the details of each telescope and each configuration.  It has evolved so that I can also plan or test image train configurations if I want to purchase something new. For example, you can figure out if a rotator will fit within the necessary backfocus distance with the correct thread sizes.
+It is an MS Excel (Office 365) file with multiple tabs.  One tab contains your current (or potential acquisition) image train components (tab=OpticalParts). The next tab contains information about your cameras (tab= Camera Specs) that are used in calculations. Some new features in Excel make it so fields are populated as drop-down lists based on the content of these sheets – and they auto filter as you start typing – it is really cool and handy.
+
+There is a tab called OTA_BLANK that contains 10 fields worth of configurations for a given telescope.  I have left some of my telescope configuration tabs in the workbook for you to see how I use it.  It tracks target backfocus distances, resolution, focal length, reducers, filter optical thickness, parts and order of assembly. The concept is that you copy the OTA_Blank tab and name it to your OTA and document the configurations.  
+
+In the OpticalParts tab, I have found it really useful to capture the URL for where I found the parts, should I need more, or when someone asks me where I got it from.  There are a few fields that capture sorting data, thread interfaces, and optical thickness and combines all of this information into a field that is presented to you on the OTA sheets.
+What backfocus distance do you need? That is documented with the hardware – and something YOU must provide, this tool just helps you figure out how to achieve the specified backfocus distance. Now, realize that there are manufacturing variations, and filters can affect the necessary distance by as much as 1.5 mm! So you will likely need to specifically tune YOUR setup with shim spacers – and it may be different across the filters you use. In general, the lower your focal ratio (f/) the more sensitive your image train will be to backfocus distance.  For example, an f/4 scope will require more precision and be more sensitive to filter variations than an f/10 scope (think depth of field concepts). I could see star eccentricity differences from 0.1 mm shim spacers using my HyperStar at f/2.2, and minimal differences with 0.2 mm shims on my native SCT at f/10.
+
+There are multiple tools that can help you tune your back focus – do a youtube search and you will find many (CCD inspector, or eccentricity calculators in image processing software).  I started out just by visual inspection in the corners of the image. My current approach is to use the aberration inspector in NINA.  There is a great video about how this works here AIC Link from the developer of the Hocus Focus plugin. This Excel sheet doesn’t figure out what the exact right spacing SHOULD be, it helps you document what worked so you can get back to it in the future.
+Please use it and let me know if there are further improvements.
+Have fun, clear skies - 
+
